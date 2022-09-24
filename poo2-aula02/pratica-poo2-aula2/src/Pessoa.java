@@ -37,22 +37,22 @@ public class Pessoa {
 
     public void checkIMC(int imc) {
         if (imc < 20) {
-            System.out.println(-1);
+            System.out.println("Abaixo do peso");
         } else {
             if (imc >= 20  ||  imc <= 25) {
-                System.out.println(0);
+                System.out.println("Peso Saudável");
             } else {
-                System.out.println(1);
+                System.out.println("Sobrepeso");
             }
         }
     }
 
     public boolean ehMaiorIdade(int idade) {
         if (idade < 18) {
-            System.out.println(false);
+            System.out.println("Pessoa menor de idade");
             return false;
         } else {
-            System.out.println(true);
+            System.out.println("Pessoa maior de idade");
             return true;
         }
     }
