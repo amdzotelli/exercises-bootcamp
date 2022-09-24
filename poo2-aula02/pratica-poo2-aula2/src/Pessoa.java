@@ -46,4 +46,27 @@ public class Pessoa {
             }
         }
     }
+
+    public boolean ehMaiorIdade(int idade) {
+        if (idade < 18) {
+            System.out.println(false);
+            return false;
+        } else {
+            System.out.println(true);
+            return true;
+        }
+    }
+
+    @Override
+    public String toString() {
+        System.out.println("Dados da Pessoa: \n" + nome
+        + "\n" + idade
+        + "\n" + peso
+        + "\n" + altura
+        + "\n" + ID
+        );
+        return nome + idade;
+    }
+
+
 }

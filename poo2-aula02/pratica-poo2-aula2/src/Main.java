@@ -15,5 +15,7 @@ public class Main {
         System.out.println(alberto.nome + " " + juliana.idade + " " + magali.peso);
 
         magali.calcularIMC(magali.peso, magali.altura);
+        juliana.ehMaiorIdade(juliana.idade);
+        alberto.toString();
     }
 }
