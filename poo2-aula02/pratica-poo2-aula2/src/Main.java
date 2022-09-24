@@ -13,5 +13,7 @@ public class Main {
         Pessoa magali = new Pessoa("Magali", 19, "1e2b3", 65, 1.65);
 
         System.out.println(alberto.nome + " " + juliana.idade + " " + magali.peso);
+
+        magali.calcularIMC(magali.peso, magali.altura);
     }
 }
