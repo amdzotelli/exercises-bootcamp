@@ -6,11 +6,19 @@ public class PraticaExcecoes {
         int b = 300;
 
         try {
-            double divisao = b / a;
-        } catch (IllegalArgumentException exception) {
-            System.out.println("Não pode ser dividido por zero");
+            System.out.println("Resposta = " + dividir(b, a));
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage());
         } finally {
-            System.out.println("Programa Finalizado");
-        }
+        System.out.println("Programa Finalizado");
     }
+    }
+
+    public static int dividir(int x, int y) throws ArithmeticException {
+        if (y == 0) {
+            throw new ArithmeticException("Não é possível dividir por zero");
+        }
+        return x / y;
+    }
+
 }
